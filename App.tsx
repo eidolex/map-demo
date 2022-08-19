@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Dimensions, FlatList, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import MapView, { Marker, Region } from 'react-native-maps';
+import MapView, { Marker, Region, PROVIDER_GOOGLE } from 'react-native-maps';
 import { getPokemons } from './api';
 import { Pokemon } from './types';
 
@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <MapView style={styles.map} region={region} >
+      <MapView provider={PROVIDER_GOOGLE} style={styles.map} region={region} >
         {pokemons.map(pokemon => {
           return (<Marker
             key={pokemon.id}
