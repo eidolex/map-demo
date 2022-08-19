@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "map-demo",
+    "slug": "map-demo",
+    "version": "1.0.0",
+    "sdkVersion": "46.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.anonymous.mapdemo"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.mapdemo"
+    }
+  }
+}
